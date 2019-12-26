@@ -1,0 +1,210 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{dejongMathematicalModellingMicrobes2017}{article}{}
+      \name{author}{7}{}{%
+        {{hash=87b772ddd15df031c67c11578d98a22d}{%
+           family={{de Jong}},
+           familyi={d\bibinitperiod},
+           given={Hidde},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d066e6518c5d5774f8999709ce6ad19b}{%
+           family={Casagranda},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=013017b2cdc9b47d08167373d442d927}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6cc96b60bccf72eb10cba400f031ed75}{%
+           family={Cinquemani},
+           familyi={C\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3921df738733159d3772855a773d408c}{%
+           family={Ropers},
+           familyi={R\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0dbf73f72d63260d8c9de3ac6a0a4e5a}{%
+           family={Geiselmann},
+           familyi={G\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ebd7537fb62f0e99a891ac07467468f}{%
+           family={Gouz{é}},
+           familyi={G\bibinitperiod},
+           given={Jean-Luc},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{81ecd29a2f35de3519d7beb5d5492e1c}
+      \strng{fullhash}{a2bbf6c29802f7b6a2ad5fa9540931df}
+      \strng{bibnamehash}{a2bbf6c29802f7b6a2ad5fa9540931df}
+      \strng{authorbibnamehash}{a2bbf6c29802f7b6a2ad5fa9540931df}
+      \strng{authornamehash}{81ecd29a2f35de3519d7beb5d5492e1c}
+      \strng{authorfullhash}{a2bbf6c29802f7b6a2ad5fa9540931df}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The growth of microorganisms involves the conversion of nutrients in the environment into biomass, mostly proteins and other macromolecules. This conversion is accomplished by networks of biochemical reactions cutting across cellular functions, such as metabolism, gene expression, transport and signalling. Mathematical modelling is a powerful tool for gaining an understanding of the functioning of this large and complex system and the role played by individual constituents and mechanisms. This requires models of microbial growth that provide an integrated view of the reaction networks and bridge the scale from individual reactions to the growth of a population. In this review, we derive a general framework for the kinetic modelling of microbial growth from basic hypotheses about the underlying reaction systems. Moreover, we show that several families of approximate models presented in the literature, notably flux balance models and coarse-grained whole-cell models, can be derived with the help of additional simplifying hypotheses. This perspective clearly brings out how apparently quite different modelling approaches are related on a deeper level, and suggests directions for further research.}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{month}{11}
+      \field{number}{136}
+      \field{shorttitle}{Mathematical Modelling of Microbes}
+      \field{title}{Mathematical Modelling of Microbes: Metabolism, Gene Expression and Growth}
+      \field{volume}{14}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{20170502}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsif.2017.0502
+      \endverb
+      \verb{file}
+      \verb /home/nigiord/.mozilla/firefox/rpgat78t.default-1461187665890/zotero/storage/RI45646C/de Jong et al. - 2017 - Mathematical modelling of microbes metabolism, ge.pdf;/home/nigiord/.mozilla/firefox/rpgat78t.default-1461187665890/zotero/storage/EDV7S5A2/rsif.2017.html
+      \endverb
+    \endentry
+    \entry{giordanoDynamicalAllocationCellular2016}{article}{}
+      \name{author}{5}{}{%
+        {{hash=013017b2cdc9b47d08167373d442d927}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e06a04b6f912434fa25963cd4b560793}{%
+           family={Mairet},
+           familyi={M\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6ebd7537fb62f0e99a891ac07467468f}{%
+           family={Gouz{é}},
+           familyi={G\bibinitperiod},
+           given={Jean-Luc},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=0dbf73f72d63260d8c9de3ac6a0a4e5a}{%
+           family={Geiselmann},
+           familyi={G\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1561e55eedaf5c6d562ad77691d74dc}{%
+           family={Jong},
+           familyi={J\bibinitperiod},
+           given={Hidde},
+           giveni={H\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdc844fcf41bb1e6fc4241f49fa98c77}
+      \strng{fullhash}{6204707984743e336e38fd0ae1d63f2f}
+      \strng{bibnamehash}{6204707984743e336e38fd0ae1d63f2f}
+      \strng{authorbibnamehash}{6204707984743e336e38fd0ae1d63f2f}
+      \strng{authornamehash}{bdc844fcf41bb1e6fc4241f49fa98c77}
+      \strng{authorfullhash}{6204707984743e336e38fd0ae1d63f2f}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Author Summary Microbial growth is the process by which cells sustain and reproduce themselves from available matter and energy. Strategies enabling microorganisms to optimize their growth rate have been extensively studied, but mostly in stable environments. Here, we build a coarse-grained model of microbial growth and use methods from optimal control theory to determine a resource allocation scheme that would lead to maximal biomass accumulation when the cells are dynamically shifted from one growth medium to another. We compare this optimal solution with several cellular implementations of growth control, based on the capacity of the cell to sense different physiological variables. We find that strategies maximizing growth in steady-state conditions perform quite differently in dynamical conditions. Moreover, the control strategy with performance close to the theoretical maximum exploits information of more than one physiological variable, suggesting that optimization of microbial growth in dynamical rather than steady environments requires broader sensory capacities. Interestingly, the ppGpp alarmone system in the enterobacterium Escherichia coli , known to play an important role in growth control, has structural similarities with the control strategy approaching the theoretical maximum. It senses a discrepancy between the concentrations of precursors and ribosomes, and adjusts ribosome synthesis in an on-off fashion. This suggests that E. coli is adapted for environments with intermittent, rapid changes in nutrient availability.}
+      \field{issn}{1553-7358}
+      \field{journaltitle}{PLOS Computational Biology}
+      \field{month}{3}
+      \field{note}{00020}
+      \field{number}{3}
+      \field{shorttitle}{Dynamical {{Allocation}} of {{Cellular Resources}} as an {{Optimal Control Problem}}}
+      \field{title}{Dynamical {{Allocation}} of {{Cellular Resources}} as an {{Optimal Control Problem}}: {{Novel Insights}} into {{Microbial Growth Strategies}}}
+      \field{volume}{12}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{e1004802}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1004802
+      \endverb
+      \verb{file}
+      \verb /home/nigiord/.mozilla/firefox/rpgat78t.default-1461187665890/zotero/storage/GQFGX2KS/Giordano et al. - 2016 - Dynamical Allocation of Cellular Resources as an O.pdf
+      \endverb
+      \keyw{Cell metabolism,Enzyme metabolism,gene expression,Macromolecules,Optimization,Protein metabolism,Ribosomes,Sensory physiology}
+    \endentry
+    \entry{giordanoDynamicalResponsesOscillating2012}{article}{}
+      \name{author}{5}{}{%
+        {{hash=013017b2cdc9b47d08167373d442d927}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=15e623439be1707d6841964d38651d69}{%
+           family={D'Ovidio},
+           familyi={D\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6c37070b2e360d6bfc1a656882873acd}{%
+           family={Dan{ø}},
+           familyi={D\bibinitperiod},
+           given={Sune},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d0e6a4ade1cf0193be607255c005512}{%
+           family={{S{ø} rensen}},
+           familyi={S\bibinitperiod},
+           given={Preben\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=527b0c42f67c32c03a2bad024f17cd66}{%
+           family={De\bibnamedelima Monte},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdc844fcf41bb1e6fc4241f49fa98c77}
+      \strng{fullhash}{c9e677e81f7df264ed8f762cb3a1309b}
+      \strng{bibnamehash}{c9e677e81f7df264ed8f762cb3a1309b}
+      \strng{authorbibnamehash}{c9e677e81f7df264ed8f762cb3a1309b}
+      \strng{authornamehash}{bdc844fcf41bb1e6fc4241f49fa98c77}
+      \strng{authorfullhash}{c9e677e81f7df264ed8f762cb3a1309b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1983-8409}
+      \field{journaltitle}{Journal of Computational Interdisciplinary Sciences}
+      \field{note}{00000}
+      \field{number}{2}
+      \field{title}{Dynamical Responses of Oscillating Yeast Cell Suspensions to Periodic Forcing.}
+      \field{volume}{3}
+      \field{year}{2012}
+      \true{nocite}
+      \field{pages}{77\bibrangedash 86}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.6062/jcis.2012.03.02.0053
+      \endverb
+      \verb{file}
+      \verb /home/nigiord/.mozilla/firefox/rpgat78t.default-1461187665890/zotero/storage/QTUH6CCV/Giordano et al. - 2012 - Dynamical responses of oscillating yeast cell susp.pdf
+      \endverb
+      \keyw{cell,complex cellular dynamics,dynamical quorum sensing,forced oscillations,glycolytic oscillations,quasiperiodicity in biological populations,synchronization}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
