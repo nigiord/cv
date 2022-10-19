@@ -8,6 +8,8 @@
 *.out
 *.toc
 *.blg
+*.bcf
+*.bbl
 
 ## Intermediate documents:
 *.dvi
