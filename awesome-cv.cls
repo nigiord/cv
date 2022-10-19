@@ -645,8 +645,14 @@
   \end{center}
 }
 % Define a line of cv information(honor, award or something else)
-% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-\newcommand*{\cvhonor}[4]{%
+% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}{<description>}
+\newcommand*{\cvhonor}[5]{%
+  \ifempty{#5}
+    {\honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\}
+    {\honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\ \multicolumn{2}{L{\textwidth - 3.2cm}}{\descriptionstyle{#5}} & \\}
+}
+
+\newcommand*{\cvhonorwithdesc}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
@@ -737,7 +743,7 @@
 %-------------------------------------------------------------------------------
 %\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
 \RequirePackage[ % BibLaTeX
-	sorting=ydnt, % Sorts entries by year (descending order), name, title
+	sorting=none, % Sorts entries by year (descending order), name, title
 	style=verbose,
 	doi=false,
 	isbn=true,

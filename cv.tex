@@ -20,65 +20,35 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-emerald}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\include{preamble.tex}
 
 %-------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %-------------------------------------------------------------------------------
 \addbibresource{cv/references.bib}
 
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{Nils}{Giordano}
-\position{Research scientist{\enskip\cdotp\enskip}Computational Systems Biologist}
-\address{Nantes, France}
+% Underline a specific author in the bibliography
+\usepackage{xstring}
+\usepackage{etoolbox}
+\newboolean{bold}
+\newcommand{\makeauthorsbold}[1]{%
+  \DeclareNameFormat{author}{%
+  \setboolean{bold}{false}%
+    \renewcommand{\do}[1]{\expandafter\ifstrequal\expandafter{\namepartfamily}{####1}{\setboolean{bold}{true}}{}}%
+    \docsvlist{#1}%
+    \ifthenelse{\value{listcount}=1}
+    {%
+      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\namepartfamily\addcomma\addspace \namepartgiveni}}}{\namepartfamily\addcomma\addspace \namepartgiveni}}%
+    }{\ifnumless{\value{listcount}}{\value{liststop}}
+      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+      }
+    \ifthenelse{\value{listcount}<\value{liststop}}
+    {\addcomma\space}{}
+  }
+}
 
-%\mobile{(+82) 10-9030-1843}
-%\email{posquit0.bj@gmail.com}
-\homepage{www.normalesup.org/\textasciitilde giordano/}
-\github{nigiord}
-\linkedin{nils-giordano}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-\googlescholar{r4wI-i4AAAAJ}{Nils Giordano}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-\quote{Microbial communities -- Metabolic Modeling -- Data Science -- Metagenomics}
-
+\makeauthorsbold{Giordano, Nils}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -105,9 +75,32 @@
 \input{cv/publications.tex}
 \input{cv/education.tex}
 \input{cv/teaching.tex}
-\newpage
-\input{cv/presentation.tex}
+%\newpage
+%\input{cv/presentation.tex}
 \input{cv/extracurricular.tex}
+%
+%\cvsection{Contact details of two referees}
+%
+%\cvdoublecolumn{
+%\cvreference{Samuel Chaffron (Postdoc advisor 2018-2019)}
+%	{Research Scientist}
+%    {Computational Biology team (ComBi)}
+%    {LS2N — UMR 6004 CNRS − Université de Nantes}
+%    {2, chemin de la Houssinière}
+%    {44322 Nantes, France}
+%    {samuel.chaffron@ls2n.fr}
+%    {+33 (0)2 51 12 58 48}
+%    }
+%{
+%\cvreference{Hidde de Jong (PhD advisor 2012-2017)}
+%	{Research Director}
+%    {INRIA Grenoble - Rhone-Alpes}
+%    {655 avenue de l'Europe}
+%    {Montbonnot}
+%    {38334 Saint Ismier, France}
+%    {Hidde.de-Jong@inria.fr}
+%    {+33 (0)4 76 61 53 35}
+%}
 
 
 %-------------------------------------------------------------------------------
