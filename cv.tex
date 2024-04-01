@@ -20,7 +20,7 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
-\include{preamble.tex}
+\input{preamble.tex}
 
 %-------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -40,8 +40,8 @@
     {%
       {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\namepartfamily\addcomma\addspace \namepartgiveni}}}{\namepartfamily\addcomma\addspace \namepartgiveni}}%
     }{\ifnumless{\value{listcount}}{\value{liststop}}
-      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni}}%
-      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}}{\addcomma\addspace \namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\namepartfamily\addcomma\addspace \namepartgiveni}}}{\namepartfamily\addcomma\addspace \namepartgiveni}}%
+      {\expandafter\ifthenelse{\boolean{bold}}{\underline{{\namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}}{\namepartfamily\addcomma\addspace \namepartgiveni\addcomma\isdot}}%
       }
     \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}{}
@@ -71,36 +71,16 @@
 %-------------------------------------------------------------------------------
 \input{cv/skills.tex}
 \input{cv/experience.tex}
-\newpage
 \input{cv/publications.tex}
 \input{cv/education.tex}
 \input{cv/teaching.tex}
 %\newpage
 %\input{cv/presentation.tex}
 \input{cv/extracurricular.tex}
-%
-%\cvsection{Contact details of two referees}
-%
-%\cvdoublecolumn{
-%\cvreference{Samuel Chaffron (Postdoc advisor 2018-2019)}
-%	{Research Scientist}
-%    {Computational Biology team (ComBi)}
-%    {LS2N — UMR 6004 CNRS − Université de Nantes}
-%    {2, chemin de la Houssinière}
-%    {44322 Nantes, France}
-%    {samuel.chaffron@ls2n.fr}
-%    {+33 (0)2 51 12 58 48}
-%    }
-%{
-%\cvreference{Hidde de Jong (PhD advisor 2012-2017)}
-%	{Research Director}
-%    {INRIA Grenoble - Rhone-Alpes}
-%    {655 avenue de l'Europe}
-%    {Montbonnot}
-%    {38334 Saint Ismier, France}
-%    {Hidde.de-Jong@inria.fr}
-%    {+33 (0)4 76 61 53 35}
-%}
+
+%\newpage
+%\input{cv/referee.tex}
+
 
 
 %-------------------------------------------------------------------------------
